@@ -38,6 +38,5 @@ def predict():
         "index.html",
         prediction_text=f"Estimated Salary : ₹ {salary}"
     )
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

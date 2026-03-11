@@ -1,141 +1,149 @@
-# 💰 Salary Prediction Using Machine Learning
+💰 Salary Prediction Using Machine Learning
 
-## 📌 Project Overview
+👨‍💻 Author
 
-This project predicts the **estimated salary of a person** based on different factors such as **Age, Gender, Education Level, Job Title, and Years of Experience**.
-The system uses a **Machine Learning Regression model** and a **Flask web application** to provide an interactive interface for users to input their details and get a salary prediction.
+Mohd Nazim
 
----
+B.Tech Computer Science Engineering (AI & ML)
 
-## 🚀 Features
+📌 Project Title
 
-* Predict salary using Machine Learning
-* User-friendly web interface
-* Input fields for:
+Salary Prediction Using Machine Learning
 
-  * Age
-  * Gender
-  * Education Level
-  * Job Title
-  * Years of Experience
-* Real-time salary prediction
-* Error handling for unknown inputs
-* Offline dataset support
+📖 Project Description
 
----
+This project predicts the estimated salary of an individual based on several factors such as Age, Gender, Education Level, Job Title, and Years of Experience.
 
-## 🛠 Technologies Used
+The system uses a Machine Learning regression model to analyze these features and predict salary. A web interface built using Flask and HTML/CSS allows users to enter their information and receive a predicted salary instantly.
 
-* **Python**
-* **Flask**
-* **NumPy**
-* **Pandas**
-* **Scikit-learn**
-* **HTML**
-* **CSS**
+The goal of this project is to demonstrate how Machine Learning models can be integrated with web applications to create practical and interactive systems.
 
----
+⚙️ Methodology
 
-## 📂 Project Structure
+The project follows the following steps:
 
-```
+1️⃣ Data Collection
+
+A dataset containing the following features is used:
+
+Age
+
+Gender
+
+Education Level
+
+Job Title
+
+Years of Experience
+
+Salary (Target Variable)
+
+2️⃣ Data Preprocessing
+
+Handling categorical variables using Label Encoding
+
+Separating features (X) and target variable (Y)
+
+3️⃣ Model Training
+
+A Linear Regression model is trained using the dataset.
+
+Libraries used:
+
+NumPy
+
+Pandas
+
+Scikit-learn
+
+The trained model is saved using Pickle (.pkl) for later use in the web application.
+
+4️⃣ Model Deployment
+
+The trained model is integrated with a Flask web application.
+
+User workflow:
+
+User enters input data in the web form
+
+Flask sends the data to the trained ML model
+
+The model processes the input
+
+The predicted salary is returned and displayed on the webpage
+
+📊 Results
+
+The system successfully predicts the estimated salary based on the user inputs.
+
+Example Output:
+
+Estimated Salary : ₹ 8,50,000
+
+The project demonstrates how machine learning models can be deployed in real-world applications using a web interface.
+
+🛠 Technologies Used
+
+Python
+
+Flask
+
+NumPy
+
+Pandas
+
+Scikit-learn
+
+HTML
+
+CSS
+
+📂 Project Structure
+
 Salary_Prediction_Using_Regression
+
 │
-├── app.py                # Flask application
-├── train_model.py        # Machine learning model training script
-├── model.pkl             # Trained ML model
-├── gender.pkl            # Gender encoder
-├── edu.pkl               # Education encoder
-├── job.pkl               # Job title encoder
-├── Salary Data.csv       # Dataset
+
+├── app.py
+
+├── train_model.py
+
+├── model.pkl
+
+├── gender.pkl
+
+├── edu.pkl
+
+├── job.pkl
+
+├── Salary Data.csv
+
 │
+
 ├── templates
-│   └── index.html        # Frontend UI
+
+│   └── index.html
+
 │
+
 └── README.md
-```
 
----
+🚀 How to Run the Project
 
-## 📊 Dataset
-
-The dataset contains the following features:
-
-* Age
-* Gender
-* Education Level
-* Job Title
-* Years of Experience
-* Salary (Target Variable)
-
-The dataset is used to train a **Linear Regression model** for predicting salary.
-
----
-
-## ⚙️ How to Run the Project
-
-### 1️⃣ Clone the repository
-
-```
+1. Clone Repository
 git clone https://github.com/yourusername/Salary-Prediction-ML.git
-```
-
-### 2️⃣ Navigate to project folder
-
-```
+2. Go to Project Folder
 cd Salary-Prediction-ML
-```
-
-### 3️⃣ Install dependencies
-
-```
+3. Install Required Libraries
 pip install -r requirements.txt
-```
-
-### 4️⃣ Train the model (optional)
-
-```
+4. Train Model (Optional)
 python train_model.py
-```
-
-### 5️⃣ Run the Flask app
-
-```
+5. Run Flask App
 python app.py
-```
-
-### 6️⃣ Open in browser
-
-```
+6. Open Browser
 http://127.0.0.1:5000/
-```
 
----
+📜 License
 
-## 🧠 Machine Learning Model
 
-The project uses **Linear Regression** to predict salary based on multiple input features.
-Categorical features such as Gender, Education Level, and Job Title are encoded using label encoders.
-
----
-
-## 📸 Project Output
-
-The user enters details in the web form and the system returns:
-
-```
-Estimated Salary : ₹ XXXXX
-```
-
----
-
-## 👨‍💻 Author
-
-**Mohd Nazim**
-B.Tech CSE (AI & ML)
-
----
-
-## 📜 License
-
-This project is created for **educational and learning purposes**.
+This project is developed for educational and learning purposes.

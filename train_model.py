@@ -33,6 +33,7 @@ X_train,X_test,y_train,y_test = train_test_split(
 # train model
 model = LinearRegression()
 model.fit(X_train,y_train)
+# Salary =b0+ b1 × Age+ b2 × Gender+ b3 × Education+ b4 × JobTitle+ b5 × Experience 
 
 # prediction for accuracy
 y_pred = model.predict(X_test)
